@@ -6,9 +6,19 @@ import PrimaryButton from "../components/Buttons/PrimaryButton";
 import { ModalContext } from "../context/ModalContext";
 import ChangeCredentials from "../components/Profile/ChangeCredentials";
 import SecondaryButton from "../components/Buttons/SecondaryButton";
+import Vonage from "@vonage/server-sdk";
+
 
 
 function Users(props) {
+
+  const { Vonage } = require('@vonage/server-sdk')
+
+  const vonage = new Vonage({
+    apiKey: "1464165f",
+    apiSecret: "5ZaIvd7erSKd1VR1"
+  })
+
 
   const dbx = async (nx) => {
     const { data, errors } = await altogic.db
