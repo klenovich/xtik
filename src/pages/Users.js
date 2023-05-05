@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import { useContext } from "react";
 import altogic from "../helpers/altogic";
+import Vonage from "../helpers/vonage";
 
 import PrimaryButton from "../components/Buttons/PrimaryButton";
 import { ModalContext } from "../context/ModalContext";
@@ -8,7 +9,11 @@ import ChangeCredentials from "../components/Profile/ChangeCredentials";
 import SecondaryButton from "../components/Buttons/SecondaryButton";
 
 
+
+
 function Users(props) {
+  
+  
 
   const dbx = async (nx) => {
     const { data, errors } = await altogic.db
@@ -24,14 +29,14 @@ function Users(props) {
   );
 
 
-  /*var name = altogic.db
+  var name = altogic.db
     .model("users")
     .get();
 
   name = toString(name);
 
   console.log("test!!!");
-*/
+
   // Every time the profile picture is upload
   
   
