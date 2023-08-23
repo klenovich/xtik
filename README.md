@@ -22,7 +22,7 @@ To install and run this project, follow these steps:
 
 1. Clone the repository:
    ```
-   git clone https://github.com/your-repo.git
+   git clone https://github.com/klenovich/xtik.git
    ```
 
 2. Install dependencies:
